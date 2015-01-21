@@ -7,7 +7,7 @@ import java.util.*;
  * @author Roger Jaffe
  * @version 2015-01-19
  */
-public class CelebrityNames
+public class BirthDate
 {
     public static final String FILE_NAME = "CelebrityData.txt";
     public static void main(String args[]) throws IOException
@@ -33,8 +33,8 @@ public class CelebrityNames
             String middleName = sc.next( );
             String lastName = sc.next( );
             String birthDate = sc.next( );
-            reversedName[j] = lastName + ", "+ firstName + " " +
-                              middleName + " -- " + birthDate;
+            reversedName[j] = birthDate + " -- " + lastName + ", " 
+                              + firstName + " " + middleName;
         } 
         
         Arrays.sort(reversedName);
